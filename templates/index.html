@@ -630,19 +630,20 @@
                                     <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
                                         <div class="product">
                                             <span class="badges">
-                                                <span class="new">{{n.description}}</span>
+                                                <span class="new">{{n.name}}</span>
                                             </span>
                                             <div class="thumb">
                                                 <a href="single-product.html" class="image">
-                                                    <img src="{{n.image}}" alt="Product" />
-                                                    <img class="hover-image" src="{{n.image}}" alt="Product" />
+                                                    <img src="/media/{{n.image}}" alt="Product" />
+                                                    <img class="hover-image" src="/media/{{n.image}}" alt="Product" />
                                                 </a>
                                             </div>
                                             <div class="content">
                                                 <span class="category"><a href="#">Accessories</a></span>
-                                                <h5 class="title"><a href="single-product.html">{{n.name}}</a>
+                                                <h5 class="title"><a href="single-product.html">{{n.description}}</a>
                                                 </h5>
                                                 <span class="price">
+                                                    <span class="old">$10000.50</span>
                                                     <span class="new">${{n.price}}</span>
                                                 </span>
                                             </div>
