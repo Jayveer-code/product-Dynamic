@@ -1,0 +1,42 @@
+1.Kitchen Appliances
+    Subcategories could include:
+    Refrigerators
+    Microwave Ovens 
+    Blenders
+    Toasters
+    Coffee Makers
+    Food Processors
+    Electric Kettles
+    Dishwashers
+
+2.Home Comfort Appliances
+    Subcategories could include:
+    Air Conditioners
+    Fans
+    Heaters
+    Humidifiers
+    Air Purifiers
+
+3.Laundry Appliances
+    Subcategories could include:
+    Washing Machines
+    Dryers
+    Irons
+    Steamers
+
+4.Entertainment Appliances
+    Subcategories could include:
+    Televisions
+    Home Theater Systems
+    Gaming Consoles
+
+5.Watches
+    Smartwatches
+    Fitness Trackers
+    Traditional Watches
+
+6.Mobiles & Accessories
+    Subcategories could include:
+    Mobiles
+    Headphones/Earphones
+    Bluetooth Speakers    

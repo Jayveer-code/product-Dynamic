@@ -17,15 +17,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Hmart import views
-from products.views import products_view
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Main/', views.Main ,name="HomePage"),
+    path('', views.Main ,name="HomePage"),
     path('Login/', views.LoginPage,name="LoginPage"),
-     path('Contact/', views.ContactPage,name="ContactPage"),
-     path('About/', views.AboutPage,name="AboutPage"),
-     path('Myaccount/', views.AccountPage,name="AccountPage"),
-      path('Mycart/', views.CartPage,name="CartPage"),
-      path('products/', products_view, name='products'),
+    path('Contact/', views.ContactPage,name="ContactPage"),
+    path('About/', views.AboutPage,name="AboutPage"),
+    path('Myaccount/', views.AccountPage,name="AccountPage"),
+    path('Mycart/', views.CartPage,name="CartPage"),
+     path('ChangePass/', views.ForgotPage,name="CartPage"),
 ]
+
+if settings.DEBUG:
+    urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

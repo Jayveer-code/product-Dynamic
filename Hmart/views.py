@@ -1,9 +1,18 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from product.models import Product,Blog
 
 
 def Main(request):
-    return render(request,'index.html')
+    
+    SerData = Product.objects.all()
+    blog_data = Blog.objects.all()
+    data = {
+        'SerData': SerData,
+        'blog_data': blog_data
+    } 
+    return render(request,'index.html',data)
+    
 
 def LoginPage(request):
     return render(request,'login.html')
@@ -21,6 +30,8 @@ def AboutPage(request):
 def AccountPage(request):
     return render(request,'my-account.html')
 
+def ForgotPage(request):
+    return render(request,'forgot.html')
 
 
 
