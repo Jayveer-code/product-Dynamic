@@ -41,7 +41,7 @@
                                                     <div class="login-toggle-btn">
                                                         <input type="checkbox" />
                                                         <a class="flote-none" href="javascript:void(0)">Remember me</a>
-                                                        <a href="#">Change Password?</a>
+                                                        <a href="/ChangePass/">Change Password?</a>
                                                     </div>
                                                     <button type="submit"><span>Login</span></button>
                                                 </div>
@@ -53,9 +53,21 @@
                                     <div class="login-form-container">
                                         <div class="login-register-form">
                                             <form action="#" method="post">
-                                                <input type="text" name="user-name" placeholder="Username" />
+                                                <input type="text" name="First-name" placeholder="First name" />
+                                                <input type="text" name="Last-name" placeholder="Last name" />
+                                                <input type="date" id="dob" name="dob" >
+                                                <select id="gender" name="gender" placeholder="gender" >
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                    <option value="other">Other</option>
+                                                </select></br></br>
+                                                <input type="text" name="Mobile-noo" placeholder="Mobile Number" />
+                                                <input name="user-email" placeholder="Email" type="Email" />
+                                                <textarea id="address" name="address" placeholder="Shipping Address" required></textarea>
+                                                <input type="text" name="Pin-code" placeholder="Pin Code" />
                                                 <input type="password" name="user-password" placeholder="Password" />
-                                                <input name="user-email" placeholder="Email" type="email" />
+                                                <input type="password" id="confirm_password" name="Confirm_password" placeholder="confirm password" required>
+                                               
                                                 <div class="button-box">
                                                     <button type="submit"><span>Register</span></button>
                                                 </div>

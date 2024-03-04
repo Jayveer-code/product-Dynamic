@@ -29,7 +29,8 @@ urlpatterns = [
     path('About/', views.AboutPage,name="AboutPage"),
     path('Myaccount/', views.AccountPage,name="AccountPage"),
     path('Mycart/', views.CartPage,name="CartPage"),
-     path('ChangePass/', views.ForgotPage,name="CartPage"),
+    path('ChangePass/', views.ForgotPage,name="ChangePass"),
+    path('Product/', views.ProductPage,name="Product"),
 ]
 
 if settings.DEBUG:

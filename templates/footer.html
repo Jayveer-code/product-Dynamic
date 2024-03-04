@@ -129,6 +129,7 @@
 
 
 <!-- Modal -->
+{% for n in SerData %}
 <div class="modal modal-2 fade" id="exampleModal" tabindex="-1" role="dialog">
 <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -142,23 +143,23 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img class="img-responsive m-auto"
-                                    src="/static/assets/images/product-image/zoom-image/1.webp" alt="">
+                                    src="/media/{{n.image}}" alt="">
                             </div>
                             <div class="swiper-slide">
                                 <img class="img-responsive m-auto"
-                                    src="/static/assets/images/product-image/zoom-image/2.webp" alt="">
+                                    src="/media/{{n.image}}" alt="">
                             </div>
                             <div class="swiper-slide">
                                 <img class="img-responsive m-auto"
-                                    src="/static/assets/images/product-image/zoom-image/3.webp" alt="">
+                                    src="/media/{{n.image}}" alt="">
                             </div>
                             <div class="swiper-slide">
                                 <img class="img-responsive m-auto"
-                                    src="/static/assets/images/product-image/zoom-image/4.webp" alt="">
+                                    src="/media/{{n.image}}" alt="">
                             </div>
                             <div class="swiper-slide">
                                 <img class="img-responsive m-auto"
-                                    src="/static/assets/images/product-image/zoom-image/5.webp" alt="">
+                                    src="/media/{{n.image}}" alt="">
                             </div>
                         </div>
                     </div>
@@ -166,23 +167,23 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img class="img-responsive m-auto"
-                                    src="assets/images/product-image/small-image/1.webp" alt="">
+                                    src="/media/{{n.image}}" alt="">
                             </div>
                             <div class="swiper-slide">
                                 <img class="img-responsive m-auto"
-                                    src="assets/images/product-image/small-image/2.webp" alt="">
+                                    src="/media/{{n.image}}" alt="">
                             </div>
                             <div class="swiper-slide">
                                 <img class="img-responsive m-auto"
-                                    src="assets/images/product-image/small-image/3.webp" alt="">
+                                    src="/media/{{n.image}}" alt="">
                             </div>
                             <div class="swiper-slide">
                                 <img class="img-responsive m-auto"
-                                    src="assets/images/product-image/small-image/4.webp" alt="">
+                                    src="/media/{{n.image}}" alt="">
                             </div>
                             <div class="swiper-slide">
                                 <img class="img-responsive m-auto"
-                                    src="assets/images/product-image/small-image/5.webp" alt="">
+                                    src="/media/{{n.image}}" alt="">
                             </div>
                         </div>
                         <!-- Add Arrows -->
@@ -192,12 +193,13 @@
                         </div>
                     </div>
                 </div>
+               
                 <div class="col-lg-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-delay="200">
                     <div class="product-details-content quickview-content">
-                        <h2>Modern Smart Phone</h2>
+                        <h2>{{n.name}}</h2>
                         <div class="pricing-meta">
                             <ul class="d-flex">
-                                <li class="new-price">$20.90</li>
+                                <li class="new-price">${{n.price}}</li>
                             </ul>
                         </div>
                         <div class="pro-details-rating-wrap">
@@ -210,16 +212,14 @@
                             </div>
                             <span class="read-review"><a class="reviews" href="#">( 2 Review )</a></span>
                         </div>
-                        <p class="mt-30px">Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmll
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mill veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip exet commodo consequat. Duis
-                            aute irure dolor</p>
+                        <p class="mt-30px">{{n.description}}</p>
                         <div class="pro-details-categories-info pro-details-same-style d-flex m-0">
                             <span>SKU:</span>
                             <ul class="d-flex">
                                 <li>
                                     <a href="#">Ch-256xl</a>
                                 </li>
+                                {% endfor %}
                             </ul>
                         </div>
                         <div class="pro-details-categories-info pro-details-same-style d-flex m-0">

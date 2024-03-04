@@ -145,6 +145,7 @@
 
 <!-- __________________________________Single Prodect start_____________________________-->
 {% for n in SerData %}
+
                             <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
                                 <!-- ___________________Single Prodect1 Start _________________________ -->
                                 <div class="product">
@@ -152,7 +153,7 @@
                                         <span class="new">{{n.name}}</span>
                                     </span>
                                     <div class="thumb">
-                                        <a href="single-product.html" class="image">
+                                        <a href="/Product/" class="image">
                                             <img src="/media/{{n.image}}" alt="Product" />
                                         </a>
                                     </div>
@@ -171,13 +172,12 @@
                                                 class="fa-solid fa-cart-shopping"></i>
                                             </i></button>
                                         <button class="action quickview" data-link-action="quickview" title="Quick view"
-                                            data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                class="pe-7s-look"></i></button>
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="pe-7s-look"></i></button>
                                     </div>
                                 </div>
                             </div>
-
-                            
+                
                             {% endfor %}
 <!-- __________________________________Single Prodect End _____________________________-->
                         </div>
